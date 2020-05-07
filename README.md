@@ -1,14 +1,14 @@
 # Clover 95% 完美黑苹果
 
 >By n0T
->
 >Blog：blog.n0T.top
 >
->感谢 各位黑果大佬 的无私分享
->
+>感谢 各位黑果大佬及平台 的无私分享
 >包括但不限于：
->
->[远景论坛](http://bbs.pcbeta.com/forum-561-1.html)	[黑果小兵的部落阁](https://blog.daliansky.net/)	[xjn819](https://blog.xjn819.com/)	[LeoForBest](https://blog.csdn.net/LeoForBest)
+>[远景论坛](http://bbs.pcbeta.com/forum-561-1.html)
+>[黑果小兵的部落阁](https://blog.daliansky.net/)
+>[xjn819](https://blog.xjn819.com/)
+>[LeoForBest](https://blog.csdn.net/LeoForBest)
 
 ## EFI 分享
 
@@ -34,7 +34,7 @@
 
 - 解锁了BIOS的`CFG Lock`，更换 `AptioMemoryFix-64.efi` ，解决内存问题
 - UEFI 添加 `EmuVariableUefi.efi`，解决 睡眠、关机重启 问题
-- 定制 `USB端口` 
+- 定制 `USB端口`
 - 定制 `AMD显卡接口`
 - CPU 变频正常
 - 蓝牙、Wi-Fi 免驱
@@ -60,7 +60,7 @@
   5. 替换系统 NTFS 文件
 
      ```shell
-     sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.orig        
+     sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.orig
      sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
      ```
 
