@@ -10,6 +10,10 @@
 >
 >[远景论坛](http://bbs.pcbeta.com/forum-561-1.html)	[黑果小兵的部落阁](https://blog.daliansky.net/)	[xjn819](https://blog.xjn819.com/)	[LeoForBest](https://blog.csdn.net/LeoForBest)
 
+## EFI 分享
+
+> [GitHub](https://github.com/n0TToday/HackMac-Clover)
+
 ## 硬件配置
 
 |    类型    |               名称                |
@@ -43,8 +47,27 @@
 
 ## 待解决
 
-- 对 NTFS 的读写操作
+- ~~对 NTFS 的读写操作~~
+
+  1. 安装 `FUSE for Mac`
+
+  2. 使用 `brew` 安装 `ntfs-3g`
+
+  3. **关闭 `SIP`**
+
+  4. **挂载系统目录 `sudo mount -uw /`**
+
+  5. 替换系统 NTFS 文件
+
+     ```shell
+     sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.orig        
+     sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
+     ```
+
+  6. 重新启动
+
 - 关机时 卡程序坞（macOS Bug）
+
 - ……（遇到再说）
 
 ## Clover 配置
